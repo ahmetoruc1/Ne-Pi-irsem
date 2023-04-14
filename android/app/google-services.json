@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874547282494",
+    "project_id": "nepisirsem-7f929",
+    "storage_bucket": "nepisirsem-7f929.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874547282494:android:f46aa0c5703a78030b876f",
+        "android_client_info": {
+          "package_name": "com.example.ne_pisirsem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874547282494-t149tq6uvuuvr29sfekm744u5nha0c00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGK7qrkgaeEGPxfyk2w_UG2dZczuA36Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874547282494-t149tq6uvuuvr29sfekm744u5nha0c00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
