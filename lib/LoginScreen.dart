@@ -31,10 +31,18 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   TextEditingController passwordController = TextEditingController();
 
   //String kullaniciadi=
-
-
+/*
+   void kontrol(){
+    if(nameController.text==""){
+      print("Lütfen Kullanıcı Adı Giriniz");
+    }else if(passwordController.text==""){
+      print("Lütfen Geçerli Bir Şifre Giriniz");
+    }
+    Null kontrolleri yapılacak
+  }*/
   @override
   Widget build(BuildContext context) {
+    bool butonpasif=true;
     return Scaffold(
       appBar: AppBar(title: Text('Ne Pişirsem'),
         backgroundColor: Colors.blue,
@@ -86,6 +94,8 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
             ),
 
             ),
+
+
             Container(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               height: 50.0,
@@ -102,7 +112,10 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
             )
           ]
       ),
+
     );
+
   }
+
 
 }
