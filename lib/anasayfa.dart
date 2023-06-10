@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'GonderiKarti.dart';
 import 'ProfilKarti.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 
@@ -9,15 +9,31 @@ import 'ProfilKarti.dart';
 
 
 class Anasayfa extends StatefulWidget {
-  final String kullaniciadi;
+  //final String kullaniciadi;
 
-  const Anasayfa( {Key? key, required this.kullaniciadi,  }) : super(key: key);
+  const Anasayfa( {Key? key,   }) : super(key: key);
 
   @override
   State<Anasayfa> createState() => _AnasayfaState();
 }
 
+//final db =FirebaseFirestore.instance;
 class _AnasayfaState extends State<Anasayfa> {
+/*
+  Future <void> kullanicilarigetir () async {
+    var snapshot= await db.collection("kullanıcılar").get();
+    snapshot.docs.forEach((doc) {
+      print(doc.data());
+
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    kullanicilarigetir();
+  }
+  */
 
   @override
   Widget build(BuildContext context) {

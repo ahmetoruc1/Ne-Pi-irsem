@@ -1,10 +1,19 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:ne_pisirsem/LoginScreen.dart';
+import 'package:ne_pisirsem/YeniGirisSayfasi.dart';
+import 'package:ne_pisirsem/YonlendirmeSayfasi.dart';
 import 'package:ne_pisirsem/anasayfa.dart';
+import 'package:ne_pisirsem/maincopy.dart';
+import 'package:firebase_core/firebase_core.dart';
+void main()  async {
 
-void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  //initialize etmeden ve main'i asenkeron yapmadan firebase e erişilemedi.
+
+  runApp(MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -17,9 +26,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: BaslangicSayfasi()
+      home: YeniGirisSayfasi()
+      //BaslangicSayfasi()
     );
   }
 }

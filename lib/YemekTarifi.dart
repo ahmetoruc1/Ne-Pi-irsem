@@ -50,7 +50,8 @@ class _TariflerState extends State<Tarifler> {
                     ),
                     IconButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Anasayfa( kullaniciadi: '',)));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Anasayfa( //kullaniciadi: '',
+                        )));
                       },
                       icon: Icon(Icons.arrow_back),
                       color: Colors.black,

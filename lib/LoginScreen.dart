@@ -42,7 +42,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   }*/
   @override
   Widget build(BuildContext context) {
-    bool butonpasif=true;
+    //bool butonpasif=true;
     return Scaffold(
       appBar: AppBar(title: Text('Ne Pişirsem'),
         backgroundColor: Colors.blue,
@@ -63,6 +63,8 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
             Container(
               padding: const EdgeInsets.all(10),
               child: TextField(
+                autocorrect: true,//Otomatik tamamlama
+                keyboardType: TextInputType.emailAddress,
 
                 decoration: InputDecoration(
                     icon: Icon(
@@ -80,7 +82,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
             Container(
               padding: const EdgeInsets.all(10),
               child:TextField(
-                obscureText: true,
+                obscureText: true,//şifrenin görükmemesi için
 
                   decoration: InputDecoration(
                       icon: Icon(
@@ -105,7 +107,8 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                   print(nameController.text);
 
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Anasayfa(
-                      kullaniciadi:nameController.text)
+                      //kullaniciadi:nameController.text
+                    )
                   ));
                 },
               ),
